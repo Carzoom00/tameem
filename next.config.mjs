@@ -12,6 +12,7 @@ const nextConfig = {
   output: 'export',
   basePath: '/tameem',
   assetPrefix: '/tameem/',
+  trailingSlash: true,
 }
 
 export default nextConfig

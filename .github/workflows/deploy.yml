@@ -30,8 +30,12 @@ jobs:
       - name: Build
         run: pnpm run build
 
+      - name: List build output
+        run: ls -la out/
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: out
-          branch: gh-pages 
+          branch: gh-pages
+          clean: true 
